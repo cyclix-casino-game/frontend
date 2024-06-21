@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/user/coindrop_send/+page.svelte";

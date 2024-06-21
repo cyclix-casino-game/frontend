@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/my-affiliate/banner/+page.svelte";
