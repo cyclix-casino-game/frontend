@@ -6,7 +6,7 @@ import "../styles/navbar.css"
 <div class="css-1cn0dze" style="height: 64px;">
     <div class="css-jbqya4">
         <a href="/" style="margin-right: auto;">
-            <img src="https://rollbit.com/static/rollbit-logo-glow-Dsg7Ol6-.svg" alt="rollbit">
+            <img src="https://rollbit.com/static/rollbit-logo-glow-Dsg7Ol6-.svg" alt="cyclix">
         </a>
             <div class="css-1wkotyo">Login</div>
             <button class="css-1psueex">Join Now</button>
