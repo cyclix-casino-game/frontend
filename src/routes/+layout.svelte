@@ -1,9 +1,13 @@
 <script>
+   /** @type {import('./$types').PageLoad} */
    import Navbar from "$lib/navbar.svelte";
    import "../styles/global.css"
    import { browser} from '$app/environment';
    import { screen } from "$lib/store/screen";
    import { onMount } from "svelte";
+   import Password from "$lib/password/index.svelte";
+   export let data 
+   $: isPassword = data?.password ? false : true
 
 let ens = browser && window.innerWidth
 browser && window.addEventListener("resize", () => {
@@ -22,10 +26,16 @@ onMount(() => {
   
 </script>
 
-<div>
-   <Navbar />
-   <slot></slot>
-</div>
+{#if $screen}
+   <div>
+      {#if isPassword}
+         <Password on:close={()=> isPassword = false}/>
+      {/if}
+      <Navbar />
+      <slot></slot>
+   </div>
+{/if}
+
 
 <style>
    
