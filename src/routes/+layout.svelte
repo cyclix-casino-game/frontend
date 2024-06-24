@@ -40,6 +40,7 @@
          menu = false
          chat = true
       }
+      
       else {
          chat =! chat
       }
