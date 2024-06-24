@@ -32,6 +32,28 @@
    })
   
    $: sideHasExpand = 248
+   $: menu = false
+   $: chat = false
+
+   const handleChatSection = (()=>{
+      if(menu){
+         menu = false
+         chat = true
+      }
+      else {
+         chat =! chat
+      }
+   })
+
+   const handleMenuSection = (()=>{
+      if(chat){
+         chat = false
+         menu = true
+      }else {
+         menu =! menu
+      }
+   })
+
 </script>
 
 {#if $screen }
@@ -39,14 +61,14 @@
       {#if isPassword}
          <Password on:close={()=> isPassword = false}/>
       {/if}
-      <Navbar sideHasExpand={sideHasExpand} on:return={()=> sideHasExpand = 248}/>
+      <Navbar sideHasExpand={sideHasExpand} chat={chat} menu={menu} on:return={()=> sideHasExpand = 248} on:chat={handleChatSection} on:menu={handleMenuSection}/>
          {#if $screen < 750}
             <div style="min-height: 112px;"></div>
          {:else}
             <div style="min-height: 64px;"></div>
          {/if}
       
-      {#if $screen > 750}
+      {#if $screen > 750 || menu}
          <RightSideBar />
       {/if}
       <div class="{sideHasExpand === 340 ? "css-yl3y1i" : sideHasExpand === 8 ? "css-qk763z" : "css-1polf3r"}">
@@ -55,7 +77,7 @@
          </div>
          <Footer />
       </div>
-      {#if $screen > 750}
+      {#if $screen > 750 || chat}
          <LeftSidebar sideHasExpand={sideHasExpand} on:close={()=> sideHasExpand = 8}  on:ellapse={()=> sideHasExpand = 248} on:expand={()=> sideHasExpand = 340}/>  
       {/if}
    </div>

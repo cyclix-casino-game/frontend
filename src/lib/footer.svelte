@@ -1,11 +1,14 @@
 <script>
+import { screen } from "$lib/store/screen";
 import "../styles/footer.css"
- const logo = new URL('../lib/images/cyclixGames1 (2).png', import.meta.url).href
+const logo = new URL('../lib/images/cyclixGames1 (2).png', import.meta.url).href
+
 </script>
 
+
 <div class="css-smran7">
- <div class="css-1d3r2lt">
-    <div class="css-8at0mx">
+ <div class="{$screen > 750 ? "css-1d3r2lt" : "css-1vfwx11"}">
+    <div class="{$screen > 750 ? "css-8at0mx" : "css-i0m45y"} ">
         <img src="{logo}" alt="" class="css-z34z8j">
         <div class="css-j2onl9">Copyright © 2024 cyclix.com. All rights reserved. cyclix is a brand name of Bull Gaming N.V. Company Address: Abraham de Veerstraat 9, Willemstad, Curacao. cyclix is licensed and authorized by the Government of Curaçao and operates under the Master License of Gaming Services Provider, N.V. #365/JAZ</div>
         <div class="css-j2onl9">Bull Gaming N.V. payments can be processed by WINGAMING SUPPORT LIMITED (Registration Number HE406701). Company Address: Avlonos, 1, MARIA HOUSE, 1075, Nicosia, Cyprus</div>
@@ -16,7 +19,7 @@ import "../styles/footer.css"
         </div>
     </div>
     <div class="css-8at0mx">
-        <div class="css-1s7527r">Platform</div>
+        <div class="{$screen > 750 ? "css-8at0mx" : "css-i0m45y"}">Platform</div>
         <a class="css-cac6yr" href="/?support">Support</a>
         <a class="css-cac6yr" href="/?faq">FAQ</a>
         <a class="css-cac6yr" href="/?partnership-program">Partnership Program</a>
@@ -24,7 +27,7 @@ import "../styles/footer.css"
         <a href="?https://help.cyclix.com/" target="_blank" class="css-cac6yr">Help Center</a>
     </div>
     <div class="css-8at0mx">
-        <div class="css-1s7527r">About us</div>
+        <div class="{$screen > 750 ? "css-8at0mx" : "css-i0m45y"}">About us</div>
         <a class="css-cac6yr" href="/?aml">AML Policy</a>
         <a class="css-cac6yr" href="/?sports-policy">Sports Policy</a>
         <a class="css-cac6yr" href="/?responsible-gaming">Responsible Gaming</a>
@@ -32,7 +35,7 @@ import "../styles/footer.css"
         <a class="css-cac6yr" href="/?terms-and-conditions">Terms and Conditions</a>
     </div>
     <div class="css-8at0mx">
-        <div class="css-1s7527r">Community</div>
+        <div class="{$screen > 750 ? "css-8at0mx" : "css-i0m45y"}">Community</div>
         <a href="https://facebook.com" target="_blank" class="css-cac6yr">Facebook</a>
         <a href="https://x.com" target="_blank" class="css-cac6yr">X</a>
         <a href="https://instagram.com" target="_blank" class="css-cac6yr">Instagram</a>

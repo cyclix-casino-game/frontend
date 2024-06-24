@@ -2,12 +2,29 @@
 import "../styles/side-bar.css"
 import { url } from "$lib/store/routes";
 $: showDropDown = true
+import { screen } from "$lib/store/screen";
 
 </script>
 
-<div class="css-1rqoxtp" style="width: 240px;">
+<div class="css-1rqoxtp" style="width: {$screen > 750 ? `240px` : `100%`};">
     <div class="css-12khlxv">
         <div class="css-hc67zf">
+            {#if $screen < 750}
+            <div class="css-1fiw968">
+                <div class="css-1b3khn7">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="18" class="css-oluyn3" style="margin-right: 10px; color: rgb(94, 98, 111);">
+                        <title>search</title>
+                        <g id="search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(2.000000, 2.000000)" fill="currentColor" id="Search">
+                                <path d="M10.8907486,1.88158344 C8.56851055,-0.456863326 4.86024486,-0.63790201 2.32381727,1.46334318 C-0.212610329,3.56458838 -0.747072288,7.26041735 1.08908942,10.0015429 C2.92525113,12.7426685 6.5310935,13.6319691 9.41939979,12.0560283 L13.2412484,15.70857 C13.6557604,16.1041785 14.3079901,16.0960217 14.7125973,15.6901693 L15.6934965,14.703431 C16.1021678,14.2898609 16.1021678,13.621943 15.6934965,13.208373 L11.9848285,9.47072793 C13.3299497,6.97621926 12.8848765,3.88894492 10.8907486,1.88158344 Z M8.99640128,9.04521142 C7.93947287,10.1089675 6.34957152,10.4274154 4.96820775,9.8520349 C3.58684398,9.27665439 2.6861184,7.92078373 2.6861184,6.41678442 C2.6861184,4.91278512 3.58684398,3.55691446 4.96820775,2.98153395 C6.34957152,2.40615343 7.93947287,2.72460133 8.99640128,3.78835743 C10.4351638,5.24178142 10.4351638,7.59178743 8.99640128,9.04521142 L8.99640128,9.04521142 Z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <input type="text" placeholder="Search games"></div>
+            </div>
+            {/if}
+           
+
             <div style="padding: 14px 0px 48px; margin: 0px -4px;">
                 <a  class="{$url === "/" ? "css-1ia53et" : "css-k50ptw"}  " href="/">
                     <div class="css-qlws2f">
@@ -69,7 +86,7 @@ $: showDropDown = true
                
                 <div class="css-1y66pyb">Popular games On Cyclix</div>
                
-                <a class="css-1js53w7" href="/crash">
+                <a class="{$url === "/crash" ? "css-1ia53et" : "css-1js53w7"}" href="/crash">
                     <div class="css-qlws2f">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" size="19.5" class="css-ovayo2">
                             <path d="M6.59994 3.46153L11.1516 8.12977L8.45156 10.8989L3.89993 6.23071L3.44993 3L6.59994 3.46153Z" fill="currentColor"></path>
@@ -82,7 +99,7 @@ $: showDropDown = true
                     Crash
                 </a>
 
-                <a class="css-1ia53et" href="/mines">
+                <a class="{$url === "/mines" ? "css-1ia53et" : "css-1js53w7"}" href="/mines">
                     <div class="css-qlws2f">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" size="19.5" class="css-ovayo2">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9999 14.6842C18.0024 14.7624 17.9596 14.8355 17.8865 14.8657C17.8613 14.8758 17.8362 14.8833 17.8109 14.8833C17.7606 14.8833 17.7127 14.8632 17.6774 14.8279L12.8791 10.0296L12.5036 10.4051C12.4306 10.4807 12.3095 10.4807 12.2365 10.4051L9.59293 7.76397C9.51991 7.69095 9.51991 7.5699 9.59293 7.49688L9.97101 7.11881L5.17274 2.32302C5.11731 2.26759 5.10215 2.18439 5.13489 2.1138C5.16522 2.04066 5.23823 1.99529 5.31635 2.00039C7.36011 2.10118 9.81467 3.19743 12.0752 5.01436L12.2365 4.87727C12.3096 4.80413 12.4306 4.80413 12.5036 4.87727L15.1446 7.52084C15.2202 7.59386 15.2202 7.71491 15.1446 7.78793L14.9858 7.92501C16.8028 10.1831 17.8991 12.6405 17.9999 14.6842ZM15.6722 6.49673L13.5 4.32197C14.1073 3.97169 14.9012 4.05488 15.4227 4.57644C15.9419 5.09558 16.0276 5.8893 15.6722 6.49674L15.6722 6.49673ZM4.27827 17.6907L10.9681 10.9657L9 8.99999L2.31018 15.7225C1.84647 16.1862 1.90944 17.0077 2.45379 17.5495C2.96287 18.0637 3.79189 18.1771 4.27827 17.6907Z" fill="currentColor"></path>
@@ -91,7 +108,7 @@ $: showDropDown = true
                     Mines
                 </a>
 
-                <a class="css-1js53w7" href="/crash">
+                <a class="{$url === "/classic-dice" ? "css-1ia53et" : "css-1js53w7"}" href="/classic-dice">
                     <div class="css-qlws2f">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" size="19.5" class="css-ovayo2">
                             <path d="M6.59994 3.46153L11.1516 8.12977L8.45156 10.8989L3.89993 6.23071L3.44993 3L6.59994 3.46153Z" fill="currentColor"></path>

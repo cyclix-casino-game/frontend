@@ -3,13 +3,14 @@ import "../styles/side-bar.css";
 import { createEventDispatcher } from "svelte";
 const dispatch = createEventDispatcher();
 export let sideHasExpand
-
+import { screen } from "$lib/store/screen";
 
 </script>
 
 <div class="css-1o06751" style="padding-bottom: 0px; z-index: 100; width:{sideHasExpand}px;">
     <div class="css-ubfyk9">
         <div class="css-1knbux5" style="margin: 0px -6px 0px -8px;">
+        {#if $screen > 750}
             <div class="css-7vo7yq">
                 <div class="css-gtbrz1">
                     <div class="css-8j08p8">
@@ -40,7 +41,8 @@ export let sideHasExpand
                     </svg>
                 </button>
             </div>
-        </div>
+            </div>
+       
         <div class="css-17rman">
             <button on:click={()=> dispatch( sideHasExpand === 248 ? "expand" : "ellapse")}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" size="21" class=" {sideHasExpand === 248 ? "css-18dge23" : "css-4pv6ck"}">
@@ -58,9 +60,10 @@ export let sideHasExpand
                     </g>
                 </svg>
             </button>
-           
         </div>
-        </div>
+        {/if}
+        
+    </div>
         
         <div class="css-1q1bjed">
             <div class="css-1l4lam1" style="margin: 0px -12px 16px -8px;">
@@ -82,7 +85,7 @@ export let sideHasExpand
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAz1BMVEVHcExnbXtbbX9nbHtnbHtnbntncXo4OkJhZnMxMzpobXtnbXtgZnM0Nz8+QUtMT1tITFZmbXtMUVpnbHpFSFNlaXZmbHxmb31nbHpnbnpGSFNeYm9PU19BRU9BRU5obXs7PkdWW2dTVmJaX2pobntmbHtoa3taXmxTWGJjaXZMUVtCRU5obHtjaXdpb3ZTVmNnbn07PkZmbHlWWmdcYm9ITVZMT1pPVF9tbX9mbXtmbntcYm5obHs/QUtCRU9KTFhmbHxmcn9jb3xaX2w3OkJ8zYiZAAAARXRSTlMA2Q6Ivr4b2dnZy6PZ2dnZ2W3ZbNnZUjc2UdnZ2dnZldnZ2dlfel/Z2dnZ2XrZKdlR2VLZ2dnZ2Q6xetmw2dnZligp2dm3Y7dnAAACWUlEQVR4Xu2ZiWrbQBRFfWVVI8lavCapt9hO06xL033f//+bSlPqYS4RaPz0AgGdHzjwDlwNqPP4aYl63UhZEQwA4FJV8yzFHeGemmK/hy3hvk6MQzgopAkGKZhB0KzjZQjCplGIQZqmbhZ04cBpFGJMyhIO6UB+KYpxYpLEbBpNc00xZkVyx0UMh8Pd0wQf4TDpJ1umMaeRbIhlnltH1c3kMQixJqIYcUEG+c2CAcUokwpK0lxGghiEOA1vyAldijEz0vzwHvT4KwkEaSo3JE/qUMJl4DHoN4YEfmnkMZgV3ezz/Td7whtCeKYJKyQUwxdTekl4Q7zTVEto0HfiIq4neZuI+FZLYmQS8zCSVtJKWsn4ywNIspm+ZAz0tSUmA65yZck57bSC5PcCf7laGB1JvuivY2zJ1mWRNy4xMYjYNCFhCzs0mpgzWDAxOuFvrQWTW61ZmVpJX21WCitZqUmWVjJWk5QPca45ANxsAGCuJln/e4ibTYxXapJf/9/6ZqojYdQlraSVtJK+THJeS4JsubuieI16EuB0xy7mCKgtAYY7aPLhGbwkyMa+jjdWUS2JPsDVrLxiHMGhd9C5n6chLF5pzCkcwhedakZwGXrEsKSjwBEwURfeaRaZ9++Bn3SzT0YYQ54mfweH9HmnJtEx3awyDcUAx2ggTUExehxDfjNDMUKKIdB4xJDejDcExxTDR/OdNEs76E6MaxJI0zQSgxmltDQ1NkSahulahVBDN/PYEEEaGvSmeD8CURFDnIYHXYODUCkGp5FsiN9HgGMopKFBf5S0/AHmsZmpq8eoNgAAAABJRU5ErkJggg==" alt="" scale="0.96" class="css-zipauw"></div>
                             <div class="css-o3tivt" style="color: white; font-weight: 600;">chickenskin:</div>
                         </div>
-                        <span class="css-1nmmrxo">gay 4 pay here</span>
+                    <span class="css-1nmmrxo">gay 4 pay here</span>
                 </div>
             </div>
 

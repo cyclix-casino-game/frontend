@@ -3,7 +3,7 @@
 </script>
 
 <div>
-   Roulette games
+  Classic Dice
 </div>
 
 <style>

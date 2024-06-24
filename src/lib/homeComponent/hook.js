@@ -1,8 +1,9 @@
+
 export const handleListGame = (()=>{
     let gameList = []
     return gameList = [
-        {id:1, name: "Crash", url:"crash", img: new URL('../../lib/images/crash.png', import.meta.url).href, super: true, houseEdge: 1 },
-        {id:1, name: "Classic Dice", url:"classic-dice", img: new URL('../../lib/images/classic_dice.png', import.meta.url).href, super: true, houseEdge: 1 },
+        {id:1, name: "Crash", url:"crash", img: new URL('../../lib/images/crash New Format.png', import.meta.url).href, super: true, houseEdge: 1 },
+        {id:1, name: "Classic Dice", url:"classic-dice", img: new URL('../../lib/images/classic_dice New format.png', import.meta.url).href, super: true, houseEdge: 1 },
         {id:1, name: "Mines", url:"mines", img: new URL('../../lib/original images/mine.png', import.meta.url).href, super: false, houseEdge: 1 },
         {id:1, name: "Plinko", url:"plinko", img: new URL('../../lib/original images/plinko.png', import.meta.url).href, super: false, houseEdge: 1 },
         {id:1, name: "Keno", url:"keno-multiplayer", img: new URL('../../lib/original images/keno.png', import.meta.url).href, super: false, houseEdge: 1 },
