@@ -85,7 +85,7 @@ import { screen } from "$lib/store/screen";
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAz1BMVEVHcExnbXtbbX9nbHtnbHtnbntncXo4OkJhZnMxMzpobXtnbXtgZnM0Nz8+QUtMT1tITFZmbXtMUVpnbHpFSFNlaXZmbHxmb31nbHpnbnpGSFNeYm9PU19BRU9BRU5obXs7PkdWW2dTVmJaX2pobntmbHtoa3taXmxTWGJjaXZMUVtCRU5obHtjaXdpb3ZTVmNnbn07PkZmbHlWWmdcYm9ITVZMT1pPVF9tbX9mbXtmbntcYm5obHs/QUtCRU9KTFhmbHxmcn9jb3xaX2w3OkJ8zYiZAAAARXRSTlMA2Q6Ivr4b2dnZy6PZ2dnZ2W3ZbNnZUjc2UdnZ2dnZldnZ2dlfel/Z2dnZ2XrZKdlR2VLZ2dnZ2Q6xetmw2dnZligp2dm3Y7dnAAACWUlEQVR4Xu2ZiWrbQBRFfWVVI8lavCapt9hO06xL033f//+bSlPqYS4RaPz0AgGdHzjwDlwNqPP4aYl63UhZEQwA4FJV8yzFHeGemmK/hy3hvk6MQzgopAkGKZhB0KzjZQjCplGIQZqmbhZ04cBpFGJMyhIO6UB+KYpxYpLEbBpNc00xZkVyx0UMh8Pd0wQf4TDpJ1umMaeRbIhlnltH1c3kMQixJqIYcUEG+c2CAcUokwpK0lxGghiEOA1vyAldijEz0vzwHvT4KwkEaSo3JE/qUMJl4DHoN4YEfmnkMZgV3ezz/Td7whtCeKYJKyQUwxdTekl4Q7zTVEto0HfiIq4neZuI+FZLYmQS8zCSVtJKWsn4ywNIspm+ZAz0tSUmA65yZck57bSC5PcCf7laGB1JvuivY2zJ1mWRNy4xMYjYNCFhCzs0mpgzWDAxOuFvrQWTW61ZmVpJX21WCitZqUmWVjJWk5QPca45ANxsAGCuJln/e4ibTYxXapJf/9/6ZqojYdQlraSVtJK+THJeS4JsubuieI16EuB0xy7mCKgtAYY7aPLhGbwkyMa+jjdWUS2JPsDVrLxiHMGhd9C5n6chLF5pzCkcwhedakZwGXrEsKSjwBEwURfeaRaZ9++Bn3SzT0YYQ54mfweH9HmnJtEx3awyDcUAx2ggTUExehxDfjNDMUKKIdB4xJDejDcExxTDR/OdNEs76E6MaxJI0zQSgxmltDQ1NkSahulahVBDN/PYEEEaGvSmeD8CURFDnIYHXYODUCkGp5FsiN9HgGMopKFBf5S0/AHmsZmpq8eoNgAAAABJRU5ErkJggg==" alt="" scale="0.96" class="css-zipauw"></div>
                             <div class="css-o3tivt" style="color: white; font-weight: 600;">chickenskin:</div>
                         </div>
-                    <span class="css-1nmmrxo">gay 4 pay here</span>
+                    <span class="css-1nmmrxo">Game on dev process</span>
                 </div>
             </div>
 
