@@ -155,7 +155,7 @@
     font-weight: 700;
     font-style: normal;
     font-size: 13px;
-    color: rgb(20, 23, 34);
+    color: #fff;
     background:  var(--primary-color);
     /* box-shadow: #ED1E63 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.15) 0px -3px 0px inset, #FA00DF 0px 0px 12px inset; */
 }

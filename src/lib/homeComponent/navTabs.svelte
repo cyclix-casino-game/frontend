@@ -3,12 +3,12 @@ import { url } from "$lib/store/routes";
 </script>
 
 <div class="css-zhn3eh">
-    <div class="css-co0306"></div>
+    <!-- <div class="css-co0306"></div> -->
     <div class="css-dffgpk">
         <div class="css-b597fs">
-            <h1 class="css-rhqiop" style="margin: 0px; font-size: 28px;">Start Winning</h1>
-            <div class="css-1bmbfr1">Experience true innovation with the highest rewards program within the industry.</div>
-            <button class="css-3gygi5">Register Now</button>
+            <!-- <h1 class="css-rhqiop" style="margin: 0px; font-size: 28px;">Start Winning</h1> -->
+            <!-- <div class="css-1bmbfr1">Experience true innovation with the highest rewards program within the industry.</div> -->
+            <!-- <button class="css-3gygi5">Register Now</button> -->
         </div>
     </div>
 </div>

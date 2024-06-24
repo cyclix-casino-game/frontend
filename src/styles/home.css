@@ -178,8 +178,9 @@
     overflow: hidden;
     background-position: 100% 50%;
     background-size: cover;
+    height: 300px;
     background-repeat: no-repeat;
-    background-image: url(https://rollbit.com/static/faze-banner-loggedout-YYGO7Fu5.jpg);
+    background-image: url(../lib/images/welcome_banner.png);
 }
 .css-co0306 {
     z-index: 0;
@@ -207,7 +208,7 @@
     justify-content: center;
     text-align: center;
     max-width: calc(3.5% + 410px);
-    padding: 36px 0px 36px 3.5%;
+    padding: 56px 0px 56px 3.5%;
 }
 .css-rhqiop {
     display: flex;
@@ -935,4 +936,53 @@
     border-radius: 8px;
     object-fit: cover;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .css-zhn3eh {
+        height: 250px;
+    }
+}
+@media (max-width: 1187px) {
+    .css-zhn3eh {
+        background-position: 50% 50%;
+    }
+}
+@media (max-width: 1307px) {
+    .css-b597fs {
+        padding: 36px 0px 36px 16px;
+    }
+}
+
+@media (max-width: 1187px) {
+    .css-b597fs {
+        padding: 32px 24px;
+    }
+}
+@media (max-width: 1187px) {
+    .css-dffgpk {
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        min-height: 0px;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .css-zhn3eh {
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .css-zhn3eh {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .css-zhn3eh {
+        height: 120px;
+    }
 }
