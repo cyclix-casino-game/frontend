@@ -2,12 +2,15 @@
 import "../styles/navbar.css"
     import { screen } from "$lib/store/screen";
     import { createEventDispatcher } from "svelte";
+    import { url} from "$lib/store/routes";
+    import { goto } from "$app/navigation";
     const dispatch = createEventDispatcher();
     const logo = new URL('../lib/images/cyclixGames1 (2).png', import.meta.url).href
     export let sideHasExpand
     export let chat
     export let menu
     
+
 
 </script>
 
@@ -17,8 +20,8 @@ import "../styles/navbar.css"
             <div class="css-15ztagm">
                 <a href="/" style="margin-right: auto;">
                     <img src="{logo}" alt="" style="margin-left: 10px;"></a>
-                    <div class="css-bt07qr" style="margin-left: 0px;">Login</div>
-                    <button class="css-vmbe4r">Join Now</button>
+                    <button on:click={()=> goto(`${$url === "/" ? "" : $url}/?tab=auth&modal=login`)} class="css-bt07qr" style="margin-left: 0px;">Login</button>
+                    <button on:click={()=> goto(`${$url === "/" ? "" : $url}/?tab=auth&modal=signup`)} class="css-vmbe4r">Join Now</button>
                 </div>
                 <div class="css-15ztagm" style="margin-right: -10px;">
                     <a on:click={()=> dispatch("menu")} class="{menu ? "css-1iygkbm" : "css-gurcvp"}" href="/">
@@ -62,8 +65,8 @@ import "../styles/navbar.css"
         <a href="/" style="margin-right: auto;">
             <img src="{logo}" alt="cyclix">
         </a>
-            <div class="css-1wkotyo">Login</div>
-            <button class="css-1psueex">Join Now</button>
+            <button on:click={()=> goto(`${$url === "/" ? "" : $url}/?tab=auth&modal=login`)} class="css-1wkotyo">Login</button>
+            <button on:click={()=> goto(`${$url === "/" ? "" : $url}/?tab=auth&modal=signup`)} class="css-1psueex">Join Now</button>
             {#if $screen > 1000}
                 <button class="css-qik1t1">
                     <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" size="19" class="css-1duiatx">

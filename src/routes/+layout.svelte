@@ -5,16 +5,34 @@
    import { browser} from '$app/environment';
    import { screen } from "$lib/store/screen";
    import { onMount } from "svelte";
-   import { url} from "$lib/store/routes";
+   import { url } from "$lib/store/routes";
    import Password from "$lib/password/index.svelte";
    import Loader from "$lib/controller/loader.svelte";
    import RightSideBar from "$lib/right-sideBar.svelte";
    import LeftSidebar from "$lib/left-sidebar.svelte";
    import Footer from "$lib/footer.svelte"
    import { page } from '$app/stores';
+   import Auth from "$lib/auth/layout.svelte";
    export let data 
+
    $: isPassword = data?.password ? false : true
    $:url.set($page.url.pathname)
+   $: url.set($page.url.pathname)
+   $: urlString = ($page.url.href);
+   $: paramString = urlString.split('?')[1];
+   $: queryString = new URLSearchParams(paramString);
+   $: seaser = []
+   $: tab = ""
+
+   $: {
+    seaser = []
+    if (paramString) {
+        for (let pair of queryString.entries()) {
+            seaser.push(pair[1])
+        }
+    }
+    tab = seaser[0]
+}
 
    let ens = browser && window.innerWidth
    browser && window.addEventListener("resize", () => {
@@ -55,10 +73,11 @@
       }
    })
 
+
 </script>
 
 {#if $screen }
-   <div>
+   <div id="root">
       {#if isPassword}
          <Password on:close={()=> isPassword = false}/>
       {/if}
@@ -86,6 +105,10 @@
    <div style="height: 70vh;">
       <Loader />
    </div>
+{/if}
+
+{#if tab === "auth"}
+   <Auth tab={seaser}/>
 {/if}
 
 
