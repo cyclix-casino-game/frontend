@@ -258,8 +258,8 @@
     font-style: normal;
     user-select: none;
     cursor: default;
-    color: rgb(255, 255, 193);
-    text-shadow: rgb(255, 93, 0) 0px 0px 10px;
+    color: rgb(242, 193, 255);
+    text-shadow:  var(--primary-color) 0px 0px 10px;
     background: rgba(203, 215, 255, 0.055) !important;
 }
 .css-k50ptw {

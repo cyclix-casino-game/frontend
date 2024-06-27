@@ -1,0 +1,100 @@
+
+.css-1m9br3f {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1040px;
+    padding: 24px 24px 48px;
+}
+.css-rhqiop {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    word-break: break-word;
+    gap: 12px;
+    font-size: 22px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.css-t60dms {
+    border-radius: 8px;
+    background: rgba(203, 215, 255, 0.03);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+.css-qgoclk {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    gap: 12px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+}
+.css-155k8hu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: none;
+    border-radius: 6px;
+    gap: 8px;
+    padding: 4px 12px 4px 10px;
+    color: var(--primary-color);
+    background: rgba(255, 24, 255, 0.08);
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.css-1h2lco0 {
+    fill: currentcolor;
+    width: 15px;
+    min-width: 15px;
+    height: auto;
+}
+.css-1jv8xsj {
+    border-radius: 8px;
+    background: rgba(203, 215, 255, 0.03);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 16px;
+    margin-top: 16px;
+    min-height: 50px;
+    padding: 0px 16px;
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.css-1i5dzy8 {
+    fill: currentcolor;
+    width: 8px;
+    min-width: 8px;
+    height: auto;
+    color: rgb(177, 182, 198);
+    transition: transform 0.1s ease 0s;
+    position: relative;
+    margin-left: auto;
+}
+.css-pvk2ve {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 12px 16px;
+    /* color: rgb(255, 176, 24); */
+    background: rgba(255, 176, 24, 0.08);
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}

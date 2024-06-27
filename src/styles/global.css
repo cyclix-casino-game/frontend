@@ -97,3 +97,38 @@ input, button, select, optgroup, textarea {
       padding-right: 248px;
   }
 }
+
+.error-message{
+  transition: all 1s ease-out;
+}
+.hTTvsjh{
+    color: #f5f6f7;
+}
+
+@media only screen and (max-width: 650px){
+    .error-message {
+        position: fixed;
+        background: #24262B;
+        width: 97%;
+        left: 6px;
+        top: 2%;
+        border-radius: 20px;
+        padding: 5px 15px;
+        margin: 0;
+        z-index: 10000000;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    .error-message{
+        position: fixed;
+        background: #24262B;
+        width: 400px;
+        left: 6px;
+        bottom: 2%;
+        border-radius: 8px;
+        padding: 5px 15px;
+        margin: 10px;
+        z-index: 10000000;
+    }
+}

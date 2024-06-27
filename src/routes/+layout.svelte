@@ -12,7 +12,9 @@
    import LeftSidebar from "$lib/left-sidebar.svelte";
    import Footer from "$lib/footer.svelte"
    import { page } from '$app/stores';
+   import { error } from "$lib/store/activities";
    import Auth from "$lib/auth/layout.svelte";
+    import Verification from "$lib/auth/verify/verification.svelte";
    export let data 
 
    $: isPassword = data?.password ? false : true
@@ -58,7 +60,6 @@
          menu = false
          chat = true
       }
-      
       else {
          chat =! chat
       }
@@ -72,7 +73,6 @@
          menu =! menu
       }
    })
-
 
 </script>
 
@@ -93,6 +93,9 @@
       {/if}
       <div class="{sideHasExpand === 340 ? "css-yl3y1i" : sideHasExpand === 8 ? "css-qk763z" : "css-1polf3r"}">
          <div class="css-1gcbewu">
+            {#if $url !== "/verification"}
+               <Verification />
+            {/if}
             <slot></slot>
          </div>
          <Footer />
@@ -106,6 +109,15 @@
       <Loader />
    </div>
 {/if}
+
+{#if $error}
+<div style="background-color:crimson;" class="error-message">
+    <div class="hTTvsjh">
+    <div>{$error}</div>
+    </div>
+</div>
+{/if}
+
 
 {#if tab === "auth"}
    <Auth tab={seaser}/>

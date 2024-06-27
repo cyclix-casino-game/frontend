@@ -1,22 +1,31 @@
 <script>
     import { useSignupHook } from "../hook"
+    import { loading } from "$lib/store/activities";
+    import { url } from "$lib/store/routes";
+    import { goto } from "$app/navigation";
     let username = ""
     let email = ""
     let password = ""
 
-    const handleSubmit = (()=> {
-        
+    $: track = !username || !email || !password || $loading
+
+    const handleSubmit = (async()=> {
+        if(!track){
+           let response = await useSignupHook({username, email, password})
+           if(response){
+            goto("/verification")
+           }
+        }
     })
-
-
+    
 </script>
 
-<form>
+<form method="post" on:submit|preventDefault={()=> handleSubmit()}>
     <div class="css-exhu38">
     <label for="rollbit-field-4061" class="css-1vec8iw">Username<span class="css-1vr6qde"> *</span></label>
     <div>
         <div class="css-14hgewr">
-            <input type="text" name="display" placeholder="Username" id="rollbit-field-4061" value="">
+            <input type="text" name="display" placeholder="Username" id="rollbit-field-4061" bind:value={username}>
         </div>
     </div>
 </div>
@@ -24,14 +33,14 @@
     <label for="rollbit-field-4062" class="css-1vec8iw">Email<span class="css-1vr6qde"> *</span></label>
     <div>
         <div class="css-14hgewr">
-            <input type="email" name="email" placeholder="youremail@domain.com" id="rollbit-field-4062" value=""></div>
+            <input type="email" name="email" placeholder="youremail@domain.com" id="rollbit-field-4062" bind:value={email}></div>
         </div>
     </div>
     <div class="css-exhu38">
         <label for="rollbit-field-4063" class="css-1vec8iw">Password<span class="css-1vr6qde"> *</span></label>
         <div>
             <div class="css-14hgewr">
-                <input type="password" name="password" placeholder="********" id="rollbit-field-4063" value=""></div>
+                <input type="password" name="password" placeholder="********" id="rollbit-field-4063" bind:value={password}></div>
             </div>
         </div>
         <div id="recaptcha4064">
@@ -49,7 +58,7 @@
                  <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> 
                  apply.
             </div>
-            <button class="css-u44gss" type="submit">Start playing</button>
+            <button disabled={track} class="css-u44gss" type="submit"> {$loading ? "Loading..." : "Start playing"}</button>
         </form>
 
 <style>
