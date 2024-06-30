@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/help/coinlimit/+page.svelte";
+export { default as component } from "../../../../src/routes/roulette/+page.svelte";

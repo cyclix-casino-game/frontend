@@ -7,4 +7,4 @@ export const serverUrl = () => {
       return "https://cyclix-game.onrender.com";
     }
   }
-};
+}

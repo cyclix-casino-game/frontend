@@ -1,0 +1,370 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_activities.js": {
+    "file": "chunks/activities.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_hook.js": {
+    "file": "chunks/hook.js"
+  },
+  "_hook2.js": {
+    "assets": [
+      "_app/immutable/assets/welcome_banner.ee5715a0.png"
+    ],
+    "css": [
+      "_app/immutable/assets/hook.ee15eab9.css"
+    ],
+    "file": "chunks/hook2.js",
+    "imports": [
+      "_ssr.js",
+      "_utils.js",
+      "_routes.js"
+    ]
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "imports": [
+      "_utils.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_prod-ssr.js": {
+    "file": "chunks/prod-ssr.js"
+  },
+  "_profile.js": {
+    "file": "chunks/profile.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_routes.js": {
+    "file": "chunks/routes.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_screen.js": {
+    "file": "chunks/screen.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "imports": [
+      "_utils.js"
+    ]
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_utils.js": {
+    "file": "chunks/utils.js"
+  },
+  "_verification.js": {
+    "css": [
+      "_app/immutable/assets/verification.bc50913e.css"
+    ],
+    "file": "chunks/verification.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_profile.js",
+      "_hook.js",
+      "_routes.js",
+      "_activities.js"
+    ]
+  },
+  "hook.css": {
+    "file": "_app/immutable/assets/hook.ee15eab9.css",
+    "src": "hook.css"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_prod-ssr.js",
+      "_internal.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/lib/images/Refer-banner1.png": {
+    "file": "_app/immutable/assets/Refer-banner1.c9358037.png",
+    "src": "src/lib/images/Refer-banner1.png"
+  },
+  "src/lib/images/welcome_banner.png": {
+    "file": "_app/immutable/assets/welcome_banner.ee5715a0.png",
+    "src": "src/lib/images/welcome_banner.png"
+  },
+  "src/lib/images/welcome_banner2.png": {
+    "file": "_app/immutable/assets/welcome_banner2.984d7d63.png",
+    "src": "src/lib/images/welcome_banner2.png"
+  },
+  "src/routes/(games)/classic-dice/+page.svelte": {
+    "file": "entries/pages/(games)/classic-dice/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(games)/classic-dice/+page.svelte"
+  },
+  "src/routes/(games)/crash/+page.svelte": {
+    "file": "entries/pages/(games)/crash/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(games)/crash/+page.svelte"
+  },
+  "src/routes/(games)/mines/+page.svelte": {
+    "file": "entries/pages/(games)/mines/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(games)/mines/+page.svelte"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout.7f423ae8.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/+layout.js": {
+    "file": "entries/pages/_layout.js",
+    "imports": [
+      "_prod-ssr.js",
+      "_routes.js",
+      "_hook.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.js"
+  },
+  "src/routes/+layout.svelte": {
+    "assets": [
+      "_app/immutable/assets/welcome_banner2.984d7d63.png"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.7f423ae8.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_screen.js",
+      "_activities.js",
+      "_routes.js",
+      "_profile.js",
+      "_stores.js",
+      "_hook.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_hook2.js",
+      "_screen.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/account/+layout.css": {
+    "file": "_app/immutable/assets/_layout.3e57e858.css",
+    "src": "src/routes/account/+layout.css"
+  },
+  "src/routes/account/+layout.svelte": {
+    "assets": [
+      "_app/immutable/assets/Refer-banner1.c9358037.png"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.3e57e858.css"
+    ],
+    "file": "entries/pages/account/_layout.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_routes.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/+layout.svelte"
+  },
+  "src/routes/account/balances/+page.svelte": {
+    "file": "entries/pages/account/balances/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/balances/+page.svelte"
+  },
+  "src/routes/account/deposits/+page.svelte": {
+    "file": "entries/pages/account/deposits/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/deposits/+page.svelte"
+  },
+  "src/routes/account/profile/+page.svelte": {
+    "file": "entries/pages/account/profile/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_verification.js",
+      "_profile.js",
+      "_routes.js",
+      "_activities.js",
+      "_hook.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/profile/+page.svelte"
+  },
+  "src/routes/account/referrals/+layout.svelte": {
+    "file": "entries/pages/account/referrals/_layout.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_routes.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/referrals/+layout.svelte"
+  },
+  "src/routes/account/referrals/codes/+page.svelte": {
+    "file": "entries/pages/account/referrals/codes/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/referrals/codes/+page.svelte"
+  },
+  "src/routes/account/referrals/users/+page.svelte": {
+    "file": "entries/pages/account/referrals/users/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/referrals/users/+page.svelte"
+  },
+  "src/routes/account/settings/+page.svelte": {
+    "file": "entries/pages/account/settings/_page.svelte.js",
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_profile.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/settings/+page.svelte"
+  },
+  "src/routes/account/withdrawals/+page.svelte": {
+    "file": "entries/pages/account/withdrawals/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/account/withdrawals/+page.svelte"
+  },
+  "src/routes/blackjack/+page.svelte": {
+    "file": "entries/pages/blackjack/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_hook2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/blackjack/+page.svelte"
+  },
+  "src/routes/game-shows/+page.svelte": {
+    "file": "entries/pages/game-shows/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_hook2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/game-shows/+page.svelte"
+  },
+  "src/routes/live-casino/+page.svelte": {
+    "file": "entries/pages/live-casino/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_hook2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/live-casino/+page.svelte"
+  },
+  "src/routes/originals/+page.svelte": {
+    "file": "entries/pages/originals/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_hook2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/originals/+page.svelte"
+  },
+  "src/routes/roulette/+page.svelte": {
+    "file": "entries/pages/roulette/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_hook2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/roulette/+page.svelte"
+  },
+  "src/routes/slots/+page.svelte": {
+    "file": "entries/pages/slots/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_hook2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/slots/+page.svelte"
+  },
+  "src/routes/test/+page.svelte": {
+    "file": "entries/pages/test/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/test/+page.svelte"
+  },
+  "src/routes/verification/+page.svelte": {
+    "file": "entries/pages/verification/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_verification.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/verification/+page.svelte"
+  },
+  "verification.css": {
+    "file": "_app/immutable/assets/verification.bc50913e.css",
+    "src": "verification.css"
+  }
+}
