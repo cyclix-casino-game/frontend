@@ -246,6 +246,50 @@
     font-weight: 800;
     font-style: normal;
 }
+.css-ef9k39 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: rgb(177, 182, 198);
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.css-123khrs {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.css-1sjzfwj {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: all 0.1s ease 0s;
+    appearance: none;
+    border: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    user-select: none;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    color: rgb(177, 182, 198);
+    background: rgba(203, 215, 255, 0.03);
+    flex: 1 1 0%;
+    padding: 0px 16px;
+}
+
 @media (max-width: 1024px) {
     .css-xzyayo {
         padding: 30px;

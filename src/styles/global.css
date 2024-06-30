@@ -69,6 +69,11 @@ input, button, select, optgroup, textarea {
   font-size: 15px;
 }
 
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .css-yl3y1i {
   display: flex;
   flex-direction: column;

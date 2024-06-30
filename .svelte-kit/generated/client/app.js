@@ -13,23 +13,41 @@ export const nodes = [
 	() => import('./nodes/9'),
 	() => import('./nodes/10'),
 	() => import('./nodes/11'),
-	() => import('./nodes/12')
+	() => import('./nodes/12'),
+	() => import('./nodes/13'),
+	() => import('./nodes/14'),
+	() => import('./nodes/15'),
+	() => import('./nodes/16'),
+	() => import('./nodes/17'),
+	() => import('./nodes/18'),
+	() => import('./nodes/19'),
+	() => import('./nodes/20'),
+	() => import('./nodes/21'),
+	() => import('./nodes/22')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
-		"/": [2],
-		"/blackjack": [6],
-		"/(games)/classic-dice": [3],
-		"/(games)/crash": [4],
-		"/game-shows": [7],
-		"/live-casino": [8],
-		"/(games)/mines": [5],
-		"/originals": [9],
-		"/roulette": [10],
-		"/slots": [11],
-		"/verification": [12]
+		"/": [4],
+		"/account/balances": [8,[2]],
+		"/account/deposits": [9,[2]],
+		"/account/profile": [10,[2]],
+		"/account/referrals/codes": [11,[2,3]],
+		"/account/referrals/users": [12,[2,3]],
+		"/account/settings": [13,[2]],
+		"/account/withdrawals": [14,[2]],
+		"/blackjack": [15],
+		"/(games)/classic-dice": [5],
+		"/(games)/crash": [6],
+		"/game-shows": [16],
+		"/live-casino": [17],
+		"/(games)/mines": [7],
+		"/originals": [18],
+		"/roulette": [19],
+		"/slots": [20],
+		"/test": [21],
+		"/verification": [22]
 	};
 
 export const hooks = {

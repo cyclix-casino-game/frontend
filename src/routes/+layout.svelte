@@ -10,9 +10,10 @@
    import Loader from "$lib/controller/loader.svelte";
    import RightSideBar from "$lib/right-sideBar.svelte";
    import LeftSidebar from "$lib/left-sidebar.svelte";
-   import Footer from "$lib/footer.svelte"
+   import Footer from "$lib/footer.svelte";
    import { page } from '$app/stores';
-   import { error } from "$lib/store/activities";
+   import { goto } from "$app/navigation"
+   import { error, isLoggin } from "$lib/store/activities";
    import Auth from "$lib/auth/layout.svelte";
     import Verification from "$lib/auth/verify/verification.svelte";
    export let data 
@@ -74,6 +75,13 @@
       }
    })
 
+   onMount(()=>{
+      if(!$isLoggin && $url === "/verification"){
+         goto("/")
+      }
+   })
+   
+
 </script>
 
 {#if $screen }
@@ -93,7 +101,7 @@
       {/if}
       <div class="{sideHasExpand === 340 ? "css-yl3y1i" : sideHasExpand === 8 ? "css-qk763z" : "css-1polf3r"}">
          <div class="css-1gcbewu">
-            {#if $url !== "/verification"}
+            {#if $url !== "/verification" && $isLoggin}
                <Verification />
             {/if}
             <slot></slot>

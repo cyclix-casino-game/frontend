@@ -3,17 +3,22 @@ import "../styles/navbar.css"
     import { screen } from "$lib/store/screen";
     import { createEventDispatcher } from "svelte";
     import { isLoggin } from "$lib/store/activities"
-    import { url} from "$lib/store/routes";
+    import { url } from "$lib/store/routes";
     import { goto } from "$app/navigation";
+    import Menu from "./homeNav/menu.svelte";
     const dispatch = createEventDispatcher();
     const logo = new URL('../lib/images/cyclixGames1 (2).png', import.meta.url).href
     const badge = new URL('../lib/images/badges/bronze1.png', import.meta.url).href
     export let sideHasExpand
     export let chat
     export let menu
-    
+    $: isMenu = false
 
 </script>
+
+{#if isMenu}
+    <Menu  on:close={()=> isMenu = false}/>
+{/if}
 
 {#if $isLoggin}
     <div class="css-1cn0dze" style="height: 64px;">
@@ -50,7 +55,7 @@ import "../styles/navbar.css"
                         <path d="M0.934258 -6.17707e-07L7.06574 -8.16755e-08C7.46509 -4.67634e-08 7.70329 0.445072 7.48177 0.77735L4.41602 5.37596C4.21811 5.67283 3.78189 5.67283 3.58397 5.37596L0.518233 0.777349C0.296715 0.445072 0.534911 -6.52619e-07 0.934258 -6.17707e-07Z" fill="currentColor"></path>
                     </svg>
                 </button> -->
-                <button class="css-8owx8k">
+                <button on:click={()=> isMenu =! isMenu} class="css-8owx8k">
                     <div size="30" class="css-10uf4u5">
                         <img src="{badge}" alt="" scale="0.96" class="css-zipauw"></div>
                         <div style="margin: -2px 10px 0px 1px; min-width: 50px;">

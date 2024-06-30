@@ -3,6 +3,7 @@
     import { loading } from "$lib/store/activities";
     import { url } from "$lib/store/routes";
     import { goto } from "$app/navigation";
+    import Google from "../google/google.svelte";
     let username = ""
     let email = ""
     let password = ""
@@ -58,8 +59,10 @@
                  <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> 
                  apply.
             </div>
-            <button disabled={track} class="css-u44gss" type="submit"> {$loading ? "Loading..." : "Start playing"}</button>
+            <button disabled={track} class="css-u44gss button" type="submit"> {$loading ? "Loading..." : "Start playing"}</button>
         </form>
+
+        <Google />
 
 <style>
    

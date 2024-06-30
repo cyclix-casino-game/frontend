@@ -3,6 +3,7 @@
     import { url } from "$lib/store/routes";
     import { goto } from "$app/navigation";
     import { handleLoginUser } from "../hook"
+    import Google from "../google/google.svelte";
 
     let password = ""
     let email = ""
@@ -63,8 +64,10 @@
     and
      <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
 </div>
-<button class="css-u44gss" disabled={track} on:click={handleSubmit} type="submit"> {$loading ? "Loading..." : "Login"}</button>
+<button class="css-u44gss button" disabled={track} on:click={handleSubmit} type="submit"> {$loading ? "Loading..." : "Login"}</button>
 </form>
+
+    <Google />
 
 <style>
    

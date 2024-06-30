@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/(games)/classic-dice/+page.svelte";
+export { default as component } from "../../../../src/routes/account/referrals/+layout.svelte";
