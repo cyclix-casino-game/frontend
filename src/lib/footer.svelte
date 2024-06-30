@@ -3,6 +3,7 @@ import { screen } from "$lib/store/screen";
 import "../styles/footer.css"
 const logo = new URL('../lib/images/cyclixGames1 (2).png', import.meta.url).href
 
+
 </script>
 
 
@@ -43,6 +44,8 @@ const logo = new URL('../lib/images/cyclixGames1 (2).png', import.meta.url).href
     </div>
 </div>
 </div>
+
+
 
 <style>
    
