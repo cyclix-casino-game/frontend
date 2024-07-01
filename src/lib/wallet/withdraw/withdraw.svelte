@@ -23,7 +23,7 @@
         <h1 class="css-rhqiop">Withdrawal options</h1>
         <div class="css-1d5ntxf">
         {#each wallet as wa}
-            <button on:click={()=> goto(`/account/withdrawals?tab=${(wa.coin_name).toLowerCase()}`)} class="css-1yhwmxl">
+            <button on:click={()=> goto(`${$url === "/" ? "" : $url}/?tab=wallet&modal=withdraw&cur=${(wa.coin_name).toLowerCase()}`)} class="css-1yhwmxl">
                 <div class="css-tt41bp">
                     <img src="{wa.coin_image}" alt="" size="32" class="css-bzek24">
                 </div>

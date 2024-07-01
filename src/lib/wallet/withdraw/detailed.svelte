@@ -16,7 +16,7 @@
     </button>
     <img src="{activeCoin?.coin_image}" alt="" size="32" class="css-bzek24">
     Withdraw Bitcoin
-    <button class="css-1w9eatj">View Transactions</button>
+    <button on:click={()=> goto(`/account/withdrawals?tab=${(activeCoin.coin_name).toLowerCase()}`)} class="css-1w9eatj">View Transactions</button>
 </h1>
 
 <div class="css-1slrani">
