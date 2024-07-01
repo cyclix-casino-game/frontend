@@ -2,7 +2,7 @@
     import { browser} from '$app/environment';
     import { createEventDispatcher } from "svelte";
     const dispatch = createEventDispatcher()
-    let password = "cyg1"
+    let password = "Keys2541?"
     $: pass = ""
     $: error = null
     $: isLoading = false

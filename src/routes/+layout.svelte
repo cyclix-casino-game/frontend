@@ -17,6 +17,7 @@
    import Auth from "$lib/auth/layout.svelte";
     import Verification from "$lib/auth/verify/verification.svelte";
     import Wallet from "$lib/wallet/layout.svelte";
+    import { handleFetchPublicChat } from "$lib/socket/index"
    export let data 
 
    $: isPassword = data?.password ? false : true
@@ -80,6 +81,10 @@
       if(!$isLoggin && $url === "/verification"){
          goto("/")
       }
+   })
+
+   onMount(async()=>{
+      await handleFetchPublicChat()
    })
    
 
