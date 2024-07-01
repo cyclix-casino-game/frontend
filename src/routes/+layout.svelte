@@ -16,6 +16,7 @@
    import { error, isLoggin } from "$lib/store/activities";
    import Auth from "$lib/auth/layout.svelte";
     import Verification from "$lib/auth/verify/verification.svelte";
+    import Wallet from "$lib/wallet/layout.svelte";
    export let data 
 
    $: isPassword = data?.password ? false : true
@@ -126,6 +127,10 @@
 </div>
 {/if}
 
+
+{#if tab === "wallet"}
+   <Wallet tab={seaser}/>
+{/if}
 
 {#if tab === "auth"}
    <Auth tab={seaser}/>

@@ -112,7 +112,7 @@
     align-items: center;
     height: 50%;
 }
-.css-15ztagm img {
+.css-15ztagm .logo {
     height: 21px;
 }
 .css-bt07qr {
@@ -153,12 +153,6 @@
     /* box-shadow: #ED1E63 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.15) 0px -3px 0px inset, #FA00DF 0px 0px 12px inset; */
 }
 
-.css-15ztagm {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 50%;
-}
 .css-gurcvp {
     display: flex;
     -webkit-box-align: center;
@@ -246,14 +240,7 @@
 .css-12frltk {
     margin-right: 10px;
 }
-.css-djv53h {
-    fill: currentcolor;
-    width: 16px;
-    min-width: 16px;
-    height: auto;
-    position: relative;
-    top: -1px;
-}
+
 .css-17wlo94 {
     padding: 6px 8px;
     margin: 0px -8px 0px 0px;
@@ -452,17 +439,6 @@
     align-items: center;
     gap: 12px;
 }
-.css-10uf4u5 {
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    min-width: 30px;
-    width: 30px;
-    min-height: 30px;
-    height: 30px;
-}
 .css-17i0f1a {
     flex-shrink: 0;
     margin-left: -4px;
@@ -471,11 +447,7 @@
     font-style: normal;
     font-size: 14px;
 }
-.css-116wgzz {
-    width: 100%;
-    height: 5px;
-    border-radius: 99px;
-}
+
 .css-9amg51 {
     display: flex;
     -webkit-box-align: center;
@@ -523,12 +495,229 @@
 .css-9amg51:hover {
     color: #fff;
 }
+.css-mdzzty {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: all 0.1s ease 0s;
+    appearance: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    user-select: none;
+    height: 40px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    background: var(--primary-color);
+    box-shadow: #a203aa 0px 0px 10px, rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.15) 0px -3px 0px inset, #ff0fa3 0px 0px 12px inset;
+    margin-left: -12px;
+    border-radius: 0px 6px 6px 0px;
+    padding: 0px;
+    width: 40px;
+    min-width: 40px;
+}
+.css-mdzzty > :last-child {
+    margin-right: 0px;
+}
+
+.css-1fmr122 {
+    fill: currentcolor;
+    width: 16px;
+    min-width: 16px;
+    height: auto;
+    position: relative;
+    top: -0.5px;
+}
+.css-8owx8k > * {
+    margin-right: 8px;
+}
+
+.css-116wgzz {
+    width: 100%;
+    height: 5px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, rgb(229, 164, 128) 0%, rgb(229, 164, 128) 0%, rgba(203, 215, 255, 0.1) 0%, rgba(203, 215, 255, 0.1) 100%);
+}
+.css-tziciz {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: -8px;
+    min-width: 40px;
+    margin-left: 12px;
+    min-height: 40px;
+}
+.css-1nfl9e5 {
+    z-index: 1000;
+    position: fixed;
+    max-width: 360px;
+    transform: translateZ(0px);
+    width: 100%;
+}
+.css-rymlxq {
+    height: 100%;
+    border-radius: 6px;
+    animation: 0.12s ease-out 0s 1 normal none running animation-1h5r8ub;
+    transform: translateZ(0px);
+    width: 100%;
+    background: rgb(31, 35, 48);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 8px -4px, rgba(0, 0, 0, 0.18) 0px 0px 20px 0px, rgba(0, 0, 0, 0.35) 0px 40px 34px -16px;
+    overflow: hidden auto;
+}
+.css-1yx9de1 {
+    flex: 1 1 0%;
+    min-width: 0px;
+}
+.css-q0akof {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    color: rgb(177, 182, 198);
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.css-1sg2lsz {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-n4mkve span {
+    margin-left: 4px;
+    color: rgb(114, 242, 56);
+}
+.css-1e0k2gt {
+    padding-top: 20px;
+}
+.css-ayxvns {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    background: rgba(15, 17, 26, 0.55);
+}
+.css-rx3rp4 {
+    flex: 1 1 0%;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px;
+}
+input[type=radio], input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.css-1cwz9v1 {
+    display: none;
+}
+.css-13ahkye {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    height: 18px;
+    margin: 0px;
+    padding-left: 28px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: rgb(177, 182, 198);
+    font-size: 13px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.css-13ahkye::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    border: 1px solid rgb(48, 53, 69);
+    border-radius: 99px;
+    background: rgb(16, 18, 27);
+}
+.css-1cwz9v1:checked + label::before {
+    background: rgb(255, 229, 0);
+    box-shadow: rgb(255, 176, 25) 0px 0px 9px 0px, rgb(255, 176, 25) 0px 0px 4px inset;
+    border: 1px solid rgb(255, 229, 0) !important;
+}
+.css-cebha4 {
+    padding-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.css-15smzfl {
+    padding-bottom: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.css-1ooew8q {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Geogrotesque Wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.css-1hu26ay {
+    fill: currentcolor;
+    width: 16px;
+    min-width: 16px;
+    height: auto;
+}
+.css-dm6haw {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 99px;
+    background: rgb(16, 18, 27);
+}
+.css-1cwz9v1:checked + label span {
+    display: inline-block;
+}
 
 @media only screen and (max-width: 700px) {
-    .css-15ztagm img{
+    .css-15ztagm .logo{
         height: 15px;
+    }
+    .css-15ztagm .logo2{
+        height: 35px;
     }
     .css-bt07qr{
         font-size: 12px;
+    }
+    .css-nq7c33 {
+        border-radius: 6px 0px 0px 6px;
     }
 }
